@@ -49,7 +49,7 @@ if st.button("🚀 3C分析を実行する", type="primary", use_container_width
     else:
         try:
             genai.configure(api_key=api_key)
-            model = genai.GenerativeModel('gemini-1.5-flash')
+            model = genai.GenerativeModel('gemini-2.5-flash')
             
             prompt = f"""
             以下の情報をもとに、事業の課題を整理するための3C分析をしてください。最初から特定の制作物を前提にせず、本当に必要な施策を見極めてください。
